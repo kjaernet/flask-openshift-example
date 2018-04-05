@@ -27,7 +27,8 @@ def hello():
 @app.route('/check')
 def check():
     return jsonify({
-        'host_name': 'You silly boy!'
+        'host_name': 'You silly boy!', 
+	'to_be': 'Or not to be!'
     })
 
 if __name__ == '__main__':
