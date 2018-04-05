@@ -23,5 +23,11 @@ def hello():
         'host': socket.gethostname()
     })
 
+@app.route('/check')
+def check():
+    return jsonify({
+        'host_name': 'You silly boy!'
+    })
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=PORT)
