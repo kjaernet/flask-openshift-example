@@ -15,6 +15,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     return jsonify({
+	'jadda': 'jo',
         'host_name': HOST_NAME,
         'app_name': APP_NAME,
         'ip': IP,
